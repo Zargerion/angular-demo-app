@@ -1,0 +1,23 @@
+<div class="not-found-container">
+  <mat-card class="not-found-card">
+    <mat-card-content>
+      <div class="not-found-content">
+        <mat-icon class="error-icon">error_outline</mat-icon>
+        <h1>404</h1>
+        <h2>Страница не найдена</h2>
+        <p>Извините, запрашиваемая страница не существует или была перемещена.</p>
+        
+        <div class="actions">
+          <button mat-raised-button color="primary" routerLink="/">
+            <mat-icon>home</mat-icon>
+            На главную
+          </button>
+          <button mat-stroked-button (click)="goBack()">
+            <mat-icon>arrow_back</mat-icon>
+            Назад
+          </button>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
